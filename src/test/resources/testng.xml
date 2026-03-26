@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="OrangeHRM Scenario Suite" parallel="false">
+    <listeners>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+        <listener class-name="utils.AllureTestListener"/>
+    </listeners>
+    <test name="OrangeHRM Demo Scenarios">
+        <classes>
+            <class name="Tests.LoginTestPage"/>
+            <class name="Tests.EmployeeE2ETest"/>
+            <class name="Tests.EmployeeProfileUpdateTest"/>
+            <class name="Tests.TimeWorkflowTest"/>
+            <class name="Tests.ReportWorkflowTest"/>
+        </classes>
+    </test>
+</suite>
